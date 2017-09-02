@@ -70,6 +70,15 @@ body {
   opacity: 0;
   transition: opacity 500ms ease-in;
 }
+.mexico {
+  text-align: center;
+  animation-name: delay;
+  animation-duration: .5s;
+}
+@keyframes delay {
+  0% { transform: translateX(-1200px); }
+  100% { transform: translateX(0px); }
+}
 
 
 /*img {

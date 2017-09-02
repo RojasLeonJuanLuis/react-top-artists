@@ -3,6 +3,7 @@ import api from '../services/api'
 import Artist from '../components/Artist'
 import Loading from '../components/shared/Loading'
 import ArtistDetail from '../components/ArtistDetail'
+import Title from '../components/Title'
 
 export default class ArtistsIndex extends Component {
   constructor(props) {
@@ -34,6 +35,7 @@ export default class ArtistsIndex extends Component {
   render() {
     return (
       <div>
+        <Title />
         <ArtistDetail selectedArtist={this.state.selectedArtist}  />
         {this.state.loading && (
           <Loading />
